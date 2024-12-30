@@ -102,16 +102,19 @@ pharmaciens_data_11 <- ACTES_PHA_11%>%
   left_join(Substitution_11, by = c("cip"= "cip"))%>%
   mutate(SUBSTITU = replace_na(SUBSTITU, 0),Toilette = 1,
          Remuneration = 
-           ifelse(ENTRETIENS > 0, 50, 0) +
-           ifelse(EFE > 0, 100, 0) +
-           ifelse(TRD > 0, 400, 0) +
-           ifelse(Evolution_RKD >= 10, 50, 0) +
-           ifelse(SUBSTITU > 10, 250, 0) +
+           ifelse(ENTRETIENS > 0, 400, 0) +
+           ifelse(EFE > 0, 50, 0) +
+           ifelse(TRD > 0, 50, 0) +
+           ifelse(Evolution_RKD >= 10, 250, 0) +
+           ifelse(SUBSTITU > 0, 100, 0) +
            ifelse(Toilette > 0, 100, 0) )%>%
   select(mail, n_auto_adhpha_B2, rs_adhpha, ENTRETIENS, EFE, TRD, Evolution_RKD, SUBSTITU, Toilette, Departement, nom, Remuneration)%>%
   arrange(mail, n_auto_adhpha_B2, rs_adhpha)
 str(pharmaciens_data_11)
+view(pharmaciens_data_11)
 
+
+write.xlsx(pharmaciens_data_11, "C:/Users/erwan/OneDrive/Documents/Rstudio/Document personnel/Projet/ROSP_2024/table_carte.xlsx")
 
 # Regrouper les données par département
 data_aggregated <- pharmaciens_data_11 %>%
@@ -127,24 +130,33 @@ geo_departements <- st_read("https://raw.githubusercontent.com/gregoiredavid/fra
 
 # Calcul des pourcentages des missions réalisées par département
 missions_filtered <- pharmaciens_data_11 %>%
-  select(Departement, ENTRETIENS, EFE, TRD, Evolution_RKD, SUBSTITU) %>%
-  rowwise() %>% 
-  mutate( Missions_realisees = sum(c_across(c(ENTRETIENS, EFE, TRD, Evolution_RKD, SUBSTITU)) > 0)) %>%
+  group_by(Departement, n_auto_adhpha_B2) %>% # Grouper par département et ID client
+  summarise(
+    ENTRETIENS = max(ENTRETIENS > 0),
+    EFE = max(EFE > 0),
+    TRD = max(TRD > 0),
+    Evolution_RKD = ifelse(max(Evolution_RKD) >=10, max(Evolution_RKD > 0), 0), # Condition Evolution_RKD
+    SUBSTITU = max(SUBSTITU > 0),
+    .groups = "drop") %>%
+  rowwise()%>%
+  mutate(Missions_realisees = sum(c_across(c(ENTRETIENS, EFE, TRD, Evolution_RKD, SUBSTITU)))) %>%
   ungroup() %>%
   group_by(Departement) %>%
   summarise(
-    Total_missions = sum(Missions_realisees) ,
-    Missions_realisees_1 = sum(Missions_realisees >= 1),
-    Missions_realisees_2 = sum(Missions_realisees >= 2),
-    Missions_realisees_3 = sum(Missions_realisees >= 3),
-    Missions_realisees_4 = sum(Missions_realisees >= 4),
+    Total_clients = n(), # Nombre total de clients uniques
+    mission_non_realisee = sum(Missions_realisees == 0),
+    Missions_realisees_1 = sum(Missions_realisees == 1),
+    Missions_realisees_2 = sum(Missions_realisees == 2),
+    Missions_realisees_3 = sum(Missions_realisees == 3),
+    Missions_realisees_4 = sum(Missions_realisees == 4),
     Missions_realisees_5 = sum(Missions_realisees == 5)) %>%
   mutate(
-    Perc_mission_1 = round((Missions_realisees_1 / Total_missions) * 100, 1),
-    Perc_mission_2 = round((Missions_realisees_2 / Total_missions) * 100, 1),
-    Perc_mission_3 = round((Missions_realisees_3 / Total_missions) * 100, 1),
-    Perc_mission_4 = round((Missions_realisees_4 / Total_missions) * 100, 1),
-    Perc_mission_5 = round((Missions_realisees_5 / Total_missions) * 100, 1))
+    Perc_non_realisee = round((mission_non_realisee / Total_clients) * 100, 1),
+    Perc_mission_1 = round((Missions_realisees_1 / Total_clients) * 100, 1),
+    Perc_mission_2 = round((Missions_realisees_2 / Total_clients) * 100, 1),
+    Perc_mission_3 = round((Missions_realisees_3 / Total_clients) * 100, 1),
+    Perc_mission_4 = round((Missions_realisees_4 / Total_clients) * 100, 1),
+    Perc_mission_5 = round((Missions_realisees_5 / Total_clients) * 100, 1))
 # Voir les résultats
 view(missions_filtered)
 
@@ -190,9 +202,10 @@ Carte <- leaflet(geo_departements) %>%
         "<strong>Département :</strong> ", ifelse(!is.na(nom), nom, "Non disponible"), "<br>",
         "<strong>Rémunération moyenne :</strong> ", 
         ifelse(!is.na(Remuneration_moyenne), paste0(round(Remuneration_moyenne, 2), " €"), "Non disponible"), "<br>",
-        "<strong>Nombre de Pharmaciens :</strong> ", 
+        "<strong>Nombre de Pharmacies :</strong> ", 
         ifelse(!is.na(Nombre_pharmaciens), Nombre_pharmaciens, "Non disponible"), "<br>",
         "<strong>Missions réalisées (%):</strong><br>",
+        " - 0/5 : ", ifelse(!is.na(Perc_non_realisee), paste0(Perc_non_realisee, "%"), "Non disponible"), "<br>",
         " - 1/5 : ", ifelse(!is.na(Perc_mission_1), paste0(Perc_mission_1, "%"), "Non disponible"), "<br>",
         " - 2/5 : ", ifelse(!is.na(Perc_mission_2), paste0(Perc_mission_2, "%"), "Non disponible"), "<br>",
         " - 3/5 : ", ifelse(!is.na(Perc_mission_3), paste0(Perc_mission_3, "%"), "Non disponible"), "<br>",
