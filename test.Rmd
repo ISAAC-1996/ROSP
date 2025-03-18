@@ -15,8 +15,12 @@ params:
   marge: "marge" 
   top_10: NULL
   top_5: NULL
-  lancement: NULL
+  lancement: NULL 
   bio: NULL
+  gap_total: NULL
+  gap_30: NULL
+  gap_50: NULL
+  gap_100: NULL
 ---
 
 ```{sass sass_setup, echo = FALSE}
@@ -30,9 +34,9 @@ params:
   background-color: #e6f5ff
   margin: 0  
   padding: 0
-  height: 29.7cm
-  max-height: 29.7cm
-  overflow: hidden
+  //height: 29.7cm
+  //max-height: 29.7cm
+  //overflow: hidden
   
 .table-responsive 
   font-size: calc(8px + 0.3vw)
@@ -46,45 +50,45 @@ params:
   margin: 0
   font-family: "Nunito Sans"
   position: relative
-  height: 75px
+  height: 100px
 
 
 .rapport-title 
   text-align: center
   margin: -13px 0 0 0
   font-size: 30px
-  color: white
+  color: #ffffff
 
 .pharma-info 
   position: absolute
-  bottom: 10px
+  bottom: 20px
   left: 10px
   display: flex
   align-items: center
-  font-size: 12px
-  margin-top: 80px
+  font-size: 14px
+  margin-top: 180px
 
 
 .pharma-logo img 
   width: 40px
   height: auto
   margin-right: 10px
-  margin-top: 80px
+  margin-top: 90px
 
 
 .pharma-info span 
-  color: white
+  color: #ffffff
   font-family: "Nunito Sans"
   margin-right: 5px
   font-size: 12px
 
 .date-info 
   position: absolute
-  bottom: 10px
+  bottom: 20px
   right: 10px
   display: flex
   align-items: center
-  font-size: 12px
+  font-size: 14px
   margin-top: 80px
 
 .date-logo img 
@@ -94,7 +98,7 @@ params:
   margin-top: 80px
   
 .date-info span 
-  color: white
+  color: #ffffff
   font-family: "Nunito Sans"
   margin-right: 3px
   font-size: 12px
@@ -104,18 +108,19 @@ params:
   justify-content: flex-start
   align-items: baseline
   background-color: #e6f5ff
-  gap: 200px
+  gap: 162px
   padding: 2px 0px
   font-family: "Nunito Sans"
-  margin-top: -10px
 
 
 .section-titles h2 
-  font-size: 16px
+  font-size: 20px
   font-weight: bold
   color: #004a99
-  margin: 10px 50px 10px 0
+  font-family: "Nunito Sans"
+  margin: 0 0 10px 0
   position: relative
+  margin-top: 0px
 
 
 .section-titles h2::after 
@@ -131,17 +136,29 @@ params:
   justify-content: space-around
   align-items: stretch
   background-color: #e6f5ff
-  margin-bottom: -10px
+
 
 .table 
   border-collapse: collapse
   font-family: "Nunito Sans"
   font-size: 11px
-  margin-top: -10px
+  margin-top: 0px
 
 .table-top-10 
   width: 49%  
   height: 30px
+  color: #ffffff
+  border-bottom: none
+  
+.table-top-10 td:nth-child(2),
+.table-top-10 td:nth-child(3) 
+  text-align: right
+.sandoz
+  color: #f1b530!important
+  
+.table-top-10 th, .table-top-5 th 
+  background-color: #004a99 !important
+  color: #ffffff !important
 
 .table-top-5-container 
   display: flex
@@ -157,26 +174,34 @@ params:
   margin: 0
   padding: 10px
   height: 170px
-  margin-top: -10px
+  margin-top: 0px
+  background-color: #004a99
+  color: #ffffff
+
+.table-top-5 td:nth-child(3),
+.table-top-5 td:nth-child(4) 
+  text-align: right
+
  
 .table th 
   background-color: #004a99
-  color: white
-  padding: 3px 5px
-  height: 40px
+  color: #ffffff
+  padding: 6px
   text-align: left
-  font-size: 13px
+  font-size: 14px
 
 .table td 
-  background-color: #d9d9d9
-  height: 15px
+  background-color: #f3f5f7
+  height: 16px
   text-align: left
   border: 1px solid #ddd
-  font-size: 11px
-  padding: 3px 5px
-
+  font-size: 13px
+  padding: 6px 10px
+  line-height: 22px
+  height: 25px
+  
 .table tr:nth-child(even) td 
-  background-color: #f2f2f2
+  background-color: #f3f5f7
   
 .discussion-wrapper 
   display: flex
@@ -192,20 +217,20 @@ params:
   padding: 6px 16px
   border-radius: 10px
   border: 2px solid #000000
-  height: 100px
-  width: 145%
+  width: 135%
+  height: 150px
   font-family: "Nunito Sans"
-  margin-top: 5px
+  margin-top: 47px
   
 .marge
   color:#ff9900
   font-weight: bold
-  font-size: 13px
+  font-size: 15px
 
 .estimation
   color:#004a99
   font-weight: bold
-  font-size: 13px
+  font-size: 15px
   
 .bulle-img 
   display: flex
@@ -223,13 +248,13 @@ params:
 .bulle-img img 
   width: 130px
   height: auto
-  margin-top: 50px
+  margin-top: 120px 
 
 .bulle-discussion p 
-  font-size: 13px
+  font-size: 16px
   margin: 0
   line-height: 1.5
-  width: 125%
+  width: 135% 
 
 .bulle-discussion ul 
   margin: 10px 0 0 0
@@ -241,19 +266,17 @@ params:
   margin: 3px 0
 
 .section-lancements 
-  margin-top: -100px
   padding-top: 5px
   background-color: #e6f5ff
-  margin-top: -40px
-
-
+  margin-top: 0px
+ 
 .section-lancements h2 
-  font-size: 16px
+  font-size: 20px
   font-weight: bold
   color: #004a99
   margin: 0 0 10px 0
   position: relative
-  margin-top: 20px
+  margin-top: 0px
 
 .section-lancements h2::after 
   content: ''
@@ -266,44 +289,60 @@ params:
 .table-lancements 
   border-collapse: collapse
   font-family: "Nunito Sans"
-  font-size: 5px
+  font-size: 13px
   width: 99%
   margin: 0 auto
-  margin-top: -7px
+  margin-top: 0px
 
 
 .table-lancements th 
   background-color: #004a99
-  color: white
+  color: #ffffff
   padding: 6px
   text-align: left
-  font-size: 13px
+  font-size: 16px
 
 .table-lancements td 
-  background-color: #d9d9d9
-  height: 12px
-  padding: 7px 9px
+  background-color: #f3f5f7
+  height: 16px
+  padding: 6px 10px
   text-align: left
   border: 1px solid #ddd
-  font-size: 11px
+  font-size: 13px
+  line-height: 22px
+  height: 25px
+  
+.pdm-low 
+  color: #ff0000!important
+  
+.pdm-high 
+  color: #008000!important 
+
+.table-lancements td:nth-child(2),
+.table-lancements td:nth-child(3),
+.table-lancements td:nth-child(4),
+.table-lancements td:nth-child(5) 
+  text-align: right
+
   
 
 .table-lancements tr:nth-child(even) td 
-  background-color: #f2f2f2
+  background-color: #ffffff
 
 .section-biosimilaires 
   padding-top: 5px
-  background-color: #e6f5ff
+  background-color: #ffffff
   font-family: "Nunito Sans"
   margin-top: 5px
+  //page-break-before: always
 
 .section-biosimilaires h2 
-  font-size: 16px
+  font-size: 20px
   font-weight: bold
   color: #004a99
   margin: 0 0 10px 0
   position: relative
-  margin-top: -3px
+  margin-top: 0px
 
 .section-biosimilaires h2::after 
   content: ''
@@ -317,34 +356,65 @@ params:
 .table-biosimilaires 
   border-collapse: collapse
   font-family: "Nunito Sans"
-  font-size: 11px
+  font-size: 13px
   width: 99%
   margin: 0 auto
-  margin-top: -7px
+  margin-top: 0px
 
 
 .table-biosimilaires th 
   background-color: #004a99
-  color: white
+  color: #e6f5ff
   padding: 6px
   text-align: left
-  font-size: 13px
+  font-size: 14px
+  font-weight: 500px
 
 .table-biosimilaires td 
-  background-color: #d9d9d9
+  background-color: #f3f5f7
   height: 16px
-  padding: 3px 6px
+  padding: 6px 10px
   text-align: left
   border: 1px solid #ddd
-  font-size: 11px
+  font-size: 13px
+  line-height: 22px
+  height: 25px
+  
+.table-biosimilaires td:nth-child(2),
+.table-biosimilaires td:nth-child(3),
+.table-biosimilaires td:nth-child(4),
+.table-biosimilaires td:nth-child(5),
+.table-biosimilaires td:nth-child(6) 
+  text-align: right
+
 
 .section-biosimilaires 
   margin-bottom: 0
   padding-bottom: 0
+  
+.total-row td 
+  background-color: #004a99 !important
+  color: #ffffff !important
+  font-weight: bold
+
+.bulle-dis 
+  display: flex
+  justify-content: space-between 
+  align-items: center
+  background-color: #fffacc      
+  padding: 16px 16px
+  border-radius: 10px
+  border: 2px solid #000000
+  width: 135%
+  height: 180px
+  font-size: 14px
+  font-family: "Nunito Sans"
+  margin-top: 50px
+
 
 .table-biosimilaires tr:nth-child(even) td 
-  background-color: #f2f2f2
-
+  background-color: #f3f5f7
+  
 .footer 
   display: flex
   justify-content: space-between
@@ -352,26 +422,30 @@ params:
   background-color: #e6f5ff
   padding: 8px 16px
   font-family: "Nunito Sans"
-  font-size: 11px
+  font-size: 14px
   margin: 0
-  margin-top: 0       
+  margin-top: 250px     
   border-top: 1px solid #004a99 
-  position: absolute
+  position:  static
   bottom: 0
   width: 100%
 
 .footer img 
-  height: 35px
+  height: 70px
 
 
 .footer .contact 
   text-align: left
   color: #004a99
+  font-size: 15px
 
 .footer .partner 
   text-align: center
   font-style: italic
   color: #004a99
+  font-size: 15px
+  
+    
   
 @media print 
   .html, body
@@ -388,17 +462,17 @@ params:
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .rapport-title 
-    color: white !important
+    color: #ffffff !important
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .pharma-info span 
-    color: white !important
+    color: #ffffff !important
     font-family: "Nunito Sans" !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .date-info span 
-    color: white !important
+    color: #ffffff !important
     font-family: "Nunito Sans" !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
@@ -422,20 +496,41 @@ params:
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
-  .table th 
+  .sandoz
+    color: #f1b530!important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .table-top-10 
+    color: #ffffff!important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+
+  .table-top-10 th, .table-top-5 th 
     background-color: #004a99 !important
-    color: white !important
+    color: #ffffff !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important 
+  
+  .table-top-5 
+  background-color: #004a99!important
+  color: #ffffff!important
+  -webkit-print-color-adjust: exact !important
+  print-color-adjust: exact !important
+    
+  .table th 
+    background-color: #004a99!important
+    color: #ffffff!important
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .table td 
-    background-color: #d9d9d9 !important
+    background-color: #ffffff !important
     border: 1px solid #ddd!important
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .table tr:nth-child(even) td
-    background-color: #f2f2f2!important
+    background-color: #f3f5f7!important
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
@@ -461,18 +556,27 @@ params:
     print-color-adjust: exact !important
   .table-lancements th  
     background-color: #004a99!important
-    color: white!important
+    color: #e6f5ff!important
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .table-lancements td  
-    background-color: #d9d9d9!important
+    background-color: #ffffff!important
     border: 1px solid #ddd!important
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
+  .pdm-low 
+    color: #ff0000!important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .pdm-high 
+    color: #008000!important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+    
   .table-lancements tr:nth-child(even) td 
-    background-color: #f2f2f2!important
+    background-color: #f3f5f7!important
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
@@ -493,18 +597,30 @@ params:
     print-color-adjust: exact !important
   .table-biosimilaires th 
     background-color: #004a99!important
-    color: white!important
+    color: #e6f5ff!important
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .table-biosimilaires td 
-    background-color: #d9d9d9!important
+    background-color: #ffffff!important
     border: 1px solid #ddd!important
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
+  .total-row td 
+    background-color: #004a99 !important
+    color: #ffffff !important
+    font-weight: bold !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
   .table-biosimilaires tr:nth-child(even) td 
-    background-color: #f2f2f2!important
+    background-color: #f3f5f7!important
+    font-family: "Nunito Sans"!important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .bulle-dis
+    background-color: #fffacc!important   
+    border: 2px solid #000000!important
     font-family: "Nunito Sans"!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
@@ -531,7 +647,6 @@ params:
     color:#004a99!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
-
    
 a[href^="https"] img 
   display: inline-block
@@ -546,7 +661,7 @@ a[href^="https"]::after
 <div class="pharma-info"><img src="https://isaac-1996.github.io/Localisation/pha.png" alt="Logo Pharmacie" /><span>`r params$pharmacie`</span><span></div><div class="date-info"><img src="https://isaac-1996.github.io/Localisation/Logo_calendrier.png" alt="Logo Calendrier" /><span>`r params$mois_annee`</span></div>
 </div>
 
-<div class="section-titles"><h2>Top 10 fuites génériques</h2><h2>Top 5 des princeps non substitués</h2></div>
+<div class="section-titles"><h2>Top 10 des switchs à réaliser </h2><h2>Top 5 princeps à substituer</h2></div>
 
 
 <div class="table-container"><table class="table table-top-10">
@@ -602,16 +717,16 @@ a[href^="https"]::after
     </tbody>
   </table>
 
-<div class="discussion-wrapper"><div class="bulle-discussion"><p>Vous auriez pu optimiser votre chiffre d’affaires vente sur le mois de `r params$mois_annee` avec une marge de<br> <span class="marge"> `r params$marge`€</span> via :<br> <strong>Switchs :</strong> <strong class="estimation">`r params$switch_total`€</strong><br><strong>Princeps non substitués :</strong> <strong class="estimation">`r params$princeps_total`€</strong></p></div>
+<div class="discussion-wrapper"><div class="bulle-discussion"><p>Vous auriez pu optimiser votre chiffre d’affaires vente sur le mois de `r params$mois_annee` avec une marge de<span class="marge"> `r params$marge`€</span> via :<br> <strong>Switchs :</strong> <strong class="estimation">`r params$switch_total`€</strong><br><strong>Princeps non substitués :</strong> <strong class="estimation">`r params$princeps_total`€</strong></p></div>
 <div class="bulle-img"><img src="https://isaac-1996.github.io/Localisation/a_revoir-removebg-preview.png" alt="Conseillère"/></div></div></div>
 </div>
 
-<div class="section-lancements"><h2>Lancements sur les 12 derniers mois</h2><table class="table-lancements">
+<div class="section-lancements"><h2>Lancements sur les 6 derniers mois</h2><table class="table-lancements">
     <thead>
       <tr>
         <th>Lancements</th>
-        <th>PDM Gx Sandoz</th>
-        <th>Sandoz</th>
+        <th>PDM Gx <span class = "sandoz">Sandoz</span></th>
+        <th>Quantité <span class = "sandoz">Sandoz</span></th>
         <th>Autres<br>génériqueurs</th>
         <th>Princeps</th>
     </tr>
@@ -621,8 +736,13 @@ a[href^="https"]::after
       if (!is.null(params$lancement) && nrow(params$lancement) > 0) {
         for (i in 1:nrow(params$lancement)) {
           cat('<tr>') 
-          cat(paste0('<td>', params$lancement[i, "Lancements"], '</td>'))  
-          cat(paste0('<td>', params$lancement[i, "PDM Gx Sandoz"], ' %</td>'))      
+          cat(paste0('<td>', params$lancement[i, "Lancements"], '</td>'))
+          pdm_value <- params$lancement[i, "PDM Gx Sandoz"]
+          pdm_style <- case_when(
+          pdm_value < 50 ~ "pdm-low",
+          pdm_value > 80 ~ "pdm-high",
+          TRUE ~ "")
+          cat(paste0('<td class="', pdm_style, '">', params$lancement[i, "PDM Gx Sandoz"], ' %</td>'))     
           cat(paste0('<td>', params$lancement[i, "Sandoz"], '</td>'))
           cat(paste0('<td>', params$lancement[i, "Autres génériqueurs"], '</td>'))
           cat(paste0('<td>', params$lancement[i, "Princeps"], '</td>'))
@@ -636,36 +756,81 @@ a[href^="https"]::after
   </table>
 </div>
 
-
-<div class="section-biosimilaires"><h2>Biosimilaires substituables</h2><table class="table-biosimilaires">
+<div style="page-break-before: always;"></div>
+<div class="html"><div class="rapport-header">
+  <h1 class="rapport-title">Rapport mensuel Sandoz</h1>
+<div class="pharma-info"><img src="https://isaac-1996.github.io/Localisation/pha.png" alt="Logo Pharmacie" /><span>`r params$pharmacie`</span><span></div><div class="date-info"><img src="https://isaac-1996.github.io/Localisation/Logo_calendrier.png" alt="Logo Calendrier" /><span>`r params$mois_annee`</span></div>
+</div>
+<br>
+<div class="section-biosimilaires"><h2>Suivi des biosimilaires substituables</h2><table class="table-biosimilaires">
     <thead>
       <tr>
         <th>Molécules</th>
-        <th>Laboratoire</th>
-        <th>Quantité</th>
-        <th>PFHT</th>
-        <th>PDM PFHT</th>
+        <th>Quantité<br><span class = "sandoz">Sandoz</span></th>
+        <th>Quantité<br>autres<br>laboratoires</th>
+        <th>PFHT<br><span class = "sandoz">Sandoz</span></th>
+        <th>PFHT autres<br>laboratoires</th>
+        <th>PDM PFHT <span class = "sandoz"><br>Sandoz</span></th>
       </tr>
     </thead>
   <tbody>
       ```{r biosimilaire, echo=FALSE, results='asis'}
-      if (!is.null(params$bio) && nrow(params$bio) > 0) {
-        for (i in 1:nrow(params$bio)) {
-          cat('<tr>') 
+    if (!is.null(params$bio) && nrow(params$bio) > 0) {
+      for (i in 1:nrow(params$bio)) {
+        if (i == nrow(params$bio)) {
+          cat('<tr class="total-row">')
+        } else {
+          cat('<tr>')
+        }
           cat(paste0('<td>', params$bio[i, "Molécules"], '</td>'))  
-          cat(paste0('<td>', capitalize_first(params$bio[i, "Laboratoire"]), '</td>'))      
-          cat(paste0('<td>', params$bio[i, "Quantité"], '</td>'))
-          cat(paste0('<td>', params$bio[i, "PFHT"], '€</td>'))
-          cat(paste0('<td>', params$bio[i, "PDM PFHT"], ' %</td>'))
+          cat(paste0('<td>', params$bio[i, "Quantité Sandoz"], '</td>'))
+          cat(paste0('<td>', params$bio[i, "Quantité autres laboratoires"], '</td>'))
+          cat(paste0('<td>', params$bio[i, "PFHT Sandoz"], '€</td>'))
+          cat(paste0('<td>', params$bio[i, "PFHT autres laboratoires"], '€</td>'))
+          pdm_value <- params$bio[i, "PDM PFHT"]
+          pdm_style <- case_when(
+          pdm_value < 50 ~ "pdm-low",
+          pdm_value > 80 ~ "pdm-high",
+          TRUE ~ "")
+          cat(paste0('<td class="', pdm_style, '">', params$bio[i, "PDM PFHT"], ' %</td>'))
           cat('</tr>')  
         }
       } else {
-        cat("<tr><td colspan='5'><strong>Aucune donnée disponible pour ce mois.</strong></td></tr>")
+        cat("<tr><td colspan='6'><strong>Aucune donnée disponible pour ce mois.</strong></td></tr>")
       }
       ```  
     </tbody>
   </table>
 </div>
-
+<div class="discussion-wrapper">
+  <div class="bulle-img"><img src="https://isaac-1996.github.io/Localisation/pharmac.png" alt="Conseillère"/></div>
+  <div class="bulle-dis"><p>Sur la période <strong class="estimation">`r params$mois_annee`</strong>, voici les estimations de chiffres d'affaires à réaliser afin d'atteindre les objectifs de parts de marché (PDM PFHT) suivants :<br><br>
+      ```{r display_objectives, echo=FALSE, results='asis'}
+  if (!is.null(params$gap_total)) {
+    gap_total_num <- as.numeric(params$gap_total)
+    if (gap_total_num < 30) {
+    # gap_total inferieur à 30%
+      cat(paste0('<span class="marge">', params$gap_30, '€</span> CA PFHT à réaliser pour atteindre <strong class="estimation">30% PDM</strong><br>'))
+      cat(paste0('<span class="marge">', params$gap_50, '€</span> CA PFHT à réaliser pour atteindre <strong class="estimation">50% PDM</strong><br>'))
+      cat(paste0('<span class="marge">', params$gap_100, '€</span> CA PFHT à réaliser pour atteindre <strong class="estimation">100% PDM</strong>'))
+    } else if (gap_total_num >= 30 && gap_total_num < 50) {
+    # gap_total entre 50% and 100% 
+      cat(paste0('<span class="marge">', params$gap_50, '€</span> CA PFHT à réaliser pour atteindre <strong class="estimation">50% PDM</strong><br>'))
+      cat(paste0('<span class="marge">', params$gap_100, '€</span> CA PFHT à réaliser pour atteindre <strong class="estimation">100% PDM</strong>'))
+    } else {
+     # gap_total sup 50%
+      cat(paste0('<span class="marge">', params$gap_100, '€</span> CA PFHT à réaliser pour atteindre <strong class="estimation">100% PDM</strong>'))
+    }
+  } else {
+    cat("Données non disponibles pour ce mois.")
+  }
+      ```  
+  
+</p></div>
+</div>
+<br>
+<br>
+<br>
+<br>
 <div class="footer"><div class="contact"><a href="https://www.ospharm.com/" target="_blank" style="text-decoration: none;"><img src="https://isaac-1996.github.io/Localisation/03_LOGO_OSPHARM.png" alt="Ospharm"/></a><p>02 40 53 63 44 | sandoz.ospharm.org</p></div><div class="partner">En partenariat avec</div><div><img src="https://isaac-1996.github.io/Localisation/Sandoz%20Logo%20Black%20and%20White%20300dpi.bmp__.png" alt="Sandoz"></div></div>
 </div>
