@@ -2,14 +2,17 @@
 # Définir le chemin vers Pandoc - AJOUTER CES LIGNES ICI
 #Sys.setenv(RSTUDIO_PANDOC = "C:/Program Files/RStudio/bin/quarto/bin/tools")
 # Si la ligne ci-dessus ne fonctionne pas, essayez plutôt celle-ci :
+log = TRUE
+cat("[OSPHARM] Section | Import des fonctions externes\n")
  Sys.setenv(RSTUDIO_PANDOC = "C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools")
 
 source("C:/Users/erwan/OneDrive/Documents/Rstudio/Document personnel/Projet/reports/connexion_config.R")
 
 ################################################################################
-# 2) Définir le calcul du jour d'envoi : le 10 (ou ici 18 pour test) 
+#  Définir le calcul du jour d'envoi : le 10 (ou ici 18 pour test) 
 #    + gestion du week-end et jours fériés
 ################################################################################
+cat("[OSPHARM] Section | Scheduling\n")
 
 jours_feries_2025 <- as.Date(c(
   "2025-01-01",
@@ -39,8 +42,9 @@ jour_envoi <- jour_envoi_mensuel()
 message("Le jour d'envoi mensuel calculé est : ", as.character(jour_envoi))
 
 ################################################################################
-# 3) Vérifier si nous sommes bien ce jour d'envoi
+# Vérifier si nous sommes bien ce jour d'envoi
 ################################################################################
+cat("[OSPHARM] Section | Debut du programme\n")
 
 if (Sys.Date() == jour_envoi) {
   message("==> Nous sommes le bon jour d'envoi ! Début du traitement...")
@@ -48,10 +52,7 @@ if (Sys.Date() == jour_envoi) {
   # Définition du répertoire de travail
   setwd("C:/Users/erwan/OneDrive/Documents/Rstudio/Document personnel/Projet/reports/")
   
-  options(scipen = 999)  
-  
-  # (Optionnel) charger d'autres scripts si besoin
-  # Par ex. un dossier "Environment" :
+  options(scipen = 999, digits = 2)
   list.files(
     path       = "../../Utils/sandbox/Environment",
     pattern    = "*.R",
@@ -61,16 +62,16 @@ if (Sys.Date() == jour_envoi) {
     invisible()
   
   ##############################################################################
-  # 3) Récupération de la période & requête SQL pour la liste des pharmacies
+  # Récupération de la période & requête SQL pour la liste des pharmacies
   ##############################################################################
+  cat("[OSPHARM] Section | Extraction des données\n")
   
-  # Ici, `mois_precedent()` est déjà chargé depuis connexion_config.R
   date_   <- mois_precedent("sql")
   periode <- date_
   message("Période calculée (SQL) : ", periode)
   
   sql_req <- sprintf("
-    SELECT n_auto_adhpha, mail
+    SELECT top 1 n_auto_adhpha, mail
     FROM vuProdAdhpha 
     LEFT JOIN ospharea_adherents ON finess_adhpha = finess
     WHERE dextinct_adhpha IS NULL
@@ -83,22 +84,22 @@ if (Sys.Date() == jour_envoi) {
       AND n_auto_adhpha IN (
         SELECT n_auto_adhpha
         FROM os_grp_adhpha
-        WHERE n_auto_adhgrp = 406
+        where n_auto_adhgrp = 406
       )
-    ORDER BY mail;
+    ORDER BY mail
   ", periode)
-  
-  df_pharmacies <- dbGetQuery(con, sql_req)%>%
-    filter(n_auto_adhpha == 12222)%>%
-    view()
+  df_pharmacies <- dbGetQuery(con, sql_req)#%>%
+    #filter(n_auto_adhpha == 9563)
+
   
   # Pour test, on modifie l'email
-  df_pharmacies$mail <-  "biama@ospharea.com" #,c("biama@ospharea.com", "adouchin@ospharea.com", "mprudhomme@ospharea.com") 
+  df_pharmacies$mail <-  c("biama@ospharea.com") #,c("adouchin@ospharea.com", "adouchin@ospharea.com", "mprudhomme@ospharea.com") 
   df_pharmacies
   message("Pharmacies à traiter : ", nrow(df_pharmacies))
   ##############################################################################
   # 4) Fonction de génération et envoi de rapport
   ##############################################################################
+  cat("[OSPHARM] Section | Automatisation Pagedown\n")
   
   genererEtEnvoyerRapport <- function(id_pharma, email_pharma, con) {
     # -- 1) Calculs / extraction de données
@@ -107,11 +108,22 @@ if (Sys.Date() == jour_envoi) {
     top_10_data <- top_10_gener(id_pharma, con)
     Lancement   <- calculer_lancements(id_pharma, con)
     top_5_data  <- top_5(id_pharma, con)
-    bio         <- Bisomilaire(id_pharma, con)
+    bio         <- Biosimilaire(id_pharma, con)
     s_switch    <- Somme_switch(id_pharma, con)
     s_princeps  <- Somme_princeps(id_pharma, con)
     marge       <- s_switch + s_princeps
+    idx_total <- which(bio$Molécules == "TOTAL")
+    pdm_actuel  <- bio$`PDM PFHT`[idx_total]
+    pfht_sandoz <- bio$`PFHT Sandoz`[idx_total]
+    pfht_autres <- bio$`PFHT autres laboratoires`[idx_total]
+    gap_total <- bio$`PDM PFHT`[idx_total]
+    pfht_global <- pfht_sandoz + pfht_autres
     
+    gap_30  <- max(0, 0.30 * pfht_global - pfht_sandoz)
+    gap_50  <- max(0, 0.50 * pfht_global - pfht_sandoz)
+    gap_100 <- max(0, 1.00 * pfht_global - pfht_sandoz)
+
+      
     # -- 2) Rendre le RMarkdown en HTML puis convertir en PDF
     html_file <- paste0("Rapport_", id_pharma, "_", monMois, ".html")
     pdf_file  <- paste0("Rapport_", id_pharma, "_", monMois, ".pdf")
@@ -128,7 +140,11 @@ if (Sys.Date() == jour_envoi) {
         top_10         = top_10_data,
         top_5          = top_5_data,
         lancement      = Lancement,
-        bio            = bio
+        bio            = bio,
+        gap_total      = gap_total,
+        gap_30         = gap_30,
+        gap_50         = gap_50,
+        gap_100        = gap_100
       )
     )
     
@@ -150,6 +166,8 @@ if (Sys.Date() == jour_envoi) {
     )
     
   ########## Email body #############
+cat("[OSPHARM] Section | emailing\n")
+    
 email_body <- paste0('
           <p>Bonjour,</p>
           <p> Veuillez trouver en pièce jointe votre rapport de ' ,monMois ,'. </p>
@@ -172,7 +190,7 @@ email_body <- paste0('
 </div>
   ')
     
-    # -- 3) Envoi de l'email avec la PJ PDF
+    # Envoi de l'email avec la PJ PDF
     send.mail(
       from         = "Coopérative OSPHARM<solutions@ospharea.com>",
       to           = email_pharma,
@@ -195,7 +213,7 @@ email_body <- paste0('
   }
   
   ##############################################################################
-  # 5) Boucle d’envoi + capture des statuts
+  # Boucle d’envoi + capture des statuts
   ##############################################################################
   
   report_results <- data.frame(
@@ -235,8 +253,9 @@ email_body <- paste0('
   }
   
   ##############################################################################
-  # 6) Envoyer un bilan à l'administrateur
+  # Envoyer un bilan à l'administrateur
   ##############################################################################
+  cat("[OSPHARM] Section | bilan stats\n")
   
   num_ok  <- sum(report_results$status == "OK")
   num_err <- sum(grepl("ERREUR", report_results$status))
@@ -284,6 +303,8 @@ email_body <- paste0('
   message("==> Traitement terminé, bilan envoyé à l'administrateur.")
   
 } else {
-  # 7) Si nous ne sommes pas le bon jour
   message("Nous ne sommes PAS le bon jour d'envoi (le 10 ou jour ouvrable suivant). Fin du script.")
 }
+
+# Cleanup -----------------------------------------------------------------
+cat("[OSPHARM] Section | Cleanup\n")

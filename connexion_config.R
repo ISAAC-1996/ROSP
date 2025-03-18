@@ -74,12 +74,25 @@ getPharmacieInfo <- function(n_auto_adhpha) {
   rs_adhpha_clean <- trimws(df$rs_adhpha)
   cp_clean        <- trimws(df$cp_ville)
   ville_clean     <- trimws(df$nom_ville)
+  
+  if (!grepl("(?i)\\pharmacie\\b", rs_adhpha_clean)) {
+    rs_adhpha_clean <- paste0("Pharmacie ", rs_adhpha_clean)
+  }
+  
   result <- paste0(
-    "Pharmacie ", rs_adhpha_clean,
+    rs_adhpha_clean,
     " - ", cp_clean, "  ", ville_clean
   )
   return(result)
 }
+
+#getPharmacieInfo(9563)
+
+
+
+
+
+
 
 ########## Top 10 fuites géneriques ############
 top_10_gener <- function(n_auto_adhpha_artic, con) {
@@ -122,25 +135,27 @@ top_5 <- function(n_auto_adhpha_artic, con) {
 
 ##################### Lancement sur les 12 derniers mois #####################
 get_period_range <- function() {
-  end_period <- mois_precedent("sql")
-  # Convertir en date pour calculer le début de période
-  end_year <- as.integer(substr(end_period, 1, 4))
+  end_period <- mois_precedent("sql")  # Ex : "202507"
+  
+  # Sépare l'année et le mois
+  end_year  <- as.integer(substr(end_period, 1, 4))
   end_month <- as.integer(substr(end_period, 5, 6))
-  # Calculer l'année et le mois de début (12 mois avant)
-  start_year <- end_year - 1
-  start_month <- end_month + 1
-  # Ajuster si le mois de début dépasse 12
-  if (start_month > 12) {
-    start_month <- 1
-    start_year <- start_year + 1
+  start_year  <- end_year
+  start_month <- end_month - 5
+  if (start_month <= 0) {
+    start_month <- start_month + 12
+    start_year  <- start_year - 1
   }
-  # Formater le mois de début au format YYYYMM
+
   start_period <- sprintf("%d%02d", start_year, start_month)
+  
   return(list(
     start = start_period,
-    end = end_period
-  ))}
+    end   = end_period
+  ))
+}
 get_period_range()
+
 
 # Fonction principale pour calculer les lancements
 calculer_lancements <- function(n_auto_adhpha_artic, con) {
@@ -316,101 +331,156 @@ Somme_princeps <- function(n_auto_adhpha_artic, con) {
 
 
 
-################### Biosimillaire #####################
-Bisomilaire <- function(n_auto_adhpha_ecollect, con) {
-  date_previous <- mois_precedent("sql")  # Génération automatique de la période
-  periode <- date_previous  # Assigne la période pour éviter l'erreur
-  
-  query <- sprintf("WITH ProduitsMolecules AS (
-    SELECT 'ZARZIO (FILGRASTIM)' AS PRESENTATION, 'SANDOZ' AS LABO, 'FILGRASTIM' AS BASE_MOLECULE
-    UNION ALL
-    SELECT 'FILGRASTIM', 'AUTRES', 'FILGRASTIM'
-    UNION ALL
-    SELECT 'ZIEXTENZO (PEGFILGRASTIM)', 'SANDOZ', 'PEGFILGRASTIM'
-    UNION ALL
-    SELECT 'PEGFILGRASTIM', 'AUTRES', 'PEGFILGRASTIM'
-    UNION ALL
-    SELECT 'EPOETINE', 'SANDOZ', 'EPOETINE'
-    UNION ALL
-    SELECT 'EPOETINE', 'AUTRES', 'EPOETINE'
-    UNION ALL
-    SELECT 'ETANERCEPT', 'SANDOZ', 'ETANERCEPT'
-    UNION ALL
-    SELECT 'ETANERCEPT', 'AUTRES', 'ETANERCEPT'
-    UNION ALL
-    SELECT 'ADALIMUMAB', 'SANDOZ', 'ADALIMUMAB'
-    UNION ALL
-    SELECT 'ADALIMUMAB', 'AUTRES', 'ADALIMUMAB'
-    UNION ALL
-    SELECT 'ENOXAPARINE', 'SANDOZ', 'ENOXAPARINE'
-    UNION ALL
-    SELECT 'ENOXAPARINE', 'AUTRES', 'ENOXAPARINE'
+################### Biosimilaire : une seule ligne par molécule,
+Biosimilaire <- function(n_auto_adhpha_ecollect, con) {
+  date_previous <- mois_precedent("sql")
+  query <- sprintf("
+WITH 
+BaseMols AS (
+  SELECT 'FILGRASTIM'    AS base_mol
+  UNION ALL SELECT 'PEGFILGRASTIM'
+  UNION ALL SELECT 'EPOETINE'
+  UNION ALL SELECT 'ETANERCEPT'
+  UNION ALL SELECT 'ADALIMUMAB'
+  UNION ALL SELECT 'ENOXAPARINE'
 ),
 Ventes AS (
-    SELECT CASE WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%FILGRASTIM%' 
-                AND concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) NOT LIKE '%PEG%' 
-                THEN CASE WHEN adhfour = 401884 THEN 'ZARZIO (FILGRASTIM)' ELSE 'FILGRASTIM' END
-           WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%PEGFILGRASTIM%' 
-                THEN CASE WHEN adhfour = 401884 THEN 'ZIEXTENZO (PEGFILGRASTIM)' ELSE 'PEGFILGRASTIM' END 
-            WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%EPOETINE%' 
-                THEN 'EPOETINE'
-            WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%ETANERCEPT%' 
-                THEN 'ETANERCEPT'
-            WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%ADALIMUMAB%' 
-                THEN 'ADALIMUMAB'
-            WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%ENOXAPARINE%' 
-                THEN 'ENOXAPARINE' END AS PRESENTATION,
-        CASE WHEN adhfour=401884 THEN 'SANDOZ' ELSE 'AUTRES' END AS LABO,
-        SUM(qt_vendu_lcollect) AS QTE,
-        SUM(qt_vendu_lcollect * P_Fab_HT) AS PFHT
-    FROM v_el_collect_ospharm
-    INNER JOIN os_gener ON n_auto_artic_lcollect=n_auto_artic_gener
-    INNER JOIN os_dci ON groupe_gener=groupe_dci
-    INNER JOIN os_artic ON n_auto_artic_lcollect=n_auto_artic
-    INNER JOIN os_adhfour ON adhfour=n_auto_adhfour
-    LEFT JOIN OSP_PROD.dbo.CEPS_Prix ON n_auto_artic_lcollect = id_sql AND actif = 1
-    WHERE n_auto_adhpha_ecollect=%d
+  SELECT
+    CASE WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%FILGRASTIM%%'
+           AND concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) NOT LIKE '%%PEG%%'
+        THEN 'FILGRASTIM'
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%PEGFILGRASTIM%%'
+        THEN 'PEGFILGRASTIM'
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%EPOETINE%%'
+        THEN 'EPOETINE'
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%ETANERCEPT%%'
+        THEN 'ETANERCEPT'
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%ADALIMUMAB%%'
+        THEN 'ADALIMUMAB'
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%ENOXAPARINE%%'
+        THEN 'ENOXAPARINE'
+      ELSE NULL
+    END AS base_mol,
+    CASE WHEN adhfour=401884 THEN 'SANDOZ' ELSE 'AUTRES' END AS labo,
+    SUM(qt_vendu_lcollect)              AS Qte,
+    SUM(qt_vendu_lcollect * P_Fab_HT)   AS PFHT
+  FROM v_el_collect_ospharm
+  INNER JOIN os_gener   ON n_auto_artic_lcollect = n_auto_artic_gener
+  INNER JOIN os_dci     ON groupe_gener = groupe_dci
+  INNER JOIN os_artic   ON n_auto_artic_lcollect = n_auto_artic
+  INNER JOIN os_adhfour ON adhfour = n_auto_adhfour
+  LEFT JOIN OSP_PROD.dbo.CEPS_Prix 
+         ON n_auto_artic_lcollect = id_sql 
+        AND actif = 1
+  WHERE n_auto_adhpha_ecollect = %d
     AND type_artic IN ('R','B')
     AND groupe_dci IN (
-        SELECT groupe_gener 
-        FROM os_grpgener_artic 
-        WHERE libelle_court_groupe LIKE 'filgrastim%' OR libelle_court_groupe LIKE 'pegfilgrastim%' OR libelle_court_groupe LIKE 'epoetine%'OR libelle_court_groupe LIKE 'etanercept%'
-		OR libelle_court_groupe LIKE 'adalimumab%'OR libelle_court_groupe LIKE 'enoxaparine%') AND periode = '%s'
-    GROUP BY CASE WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%FILGRASTIM%' 
-                AND concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) NOT LIKE '%PEG%' 
-                THEN CASE WHEN adhfour = 401884 THEN 'ZARZIO (FILGRASTIM)' ELSE 'FILGRASTIM' END
-            WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%PEGFILGRASTIM%' 
-                THEN CASE WHEN adhfour = 401884 THEN 'ZIEXTENZO (PEGFILGRASTIM)' ELSE 'PEGFILGRASTIM' END 
-            WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%EPOETINE%' 
-                THEN 'EPOETINE'
-            WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%ETANERCEPT%' 
-                THEN 'ETANERCEPT'
-            WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%ADALIMUMAB%' 
-                THEN 'ADALIMUMAB'
-            WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%ENOXAPARINE%' 
-                THEN 'ENOXAPARINE' END, CASE WHEN adhfour=401884 THEN 'SANDOZ' ELSE 'AUTRES' END)
-SELECT pm.PRESENTATION, pm.LABO,
-    COALESCE(v.QTE, 0) AS QTE,
-    COALESCE(v.PFHT, 0) AS PFHT,
-    CAST(CASE WHEN SUM(COALESCE(v.PFHT, 0)) OVER (PARTITION BY pm.BASE_MOLECULE) = 0 
-            THEN 0 ELSE ROUND(COALESCE(v.PFHT, 0) * 100.0 / SUM(COALESCE(v.PFHT, 0)) OVER (PARTITION BY pm.BASE_MOLECULE), 2)
-         END AS DECIMAL(10,2)) AS PDM_PFHT
-FROM ProduitsMolecules pm LEFT JOIN Ventes v ON pm.PRESENTATION = v.PRESENTATION AND pm.LABO = v.LABO
-ORDER BY CASE WHEN pm.PRESENTATION LIKE '%FILGRASTIM%' AND pm.PRESENTATION NOT LIKE '%PEG%' THEN 1
-        WHEN pm.PRESENTATION LIKE '%PEGFILGRASTIM%' THEN 2
-        WHEN pm.PRESENTATION LIKE '%EPOETINE%' THEN 3
-        WHEN pm.PRESENTATION LIKE '%ETANERCEPT%' THEN 4
-        WHEN pm.PRESENTATION LIKE '%ADALIMUMAB%' THEN 5
-        WHEN pm.PRESENTATION LIKE '%ENOXAPARINE%' THEN 6 END, pm.PRESENTATION, pm.LABO DESC;",
-                   n_auto_adhpha_ecollect,
-                   periode)
-    result <- dbGetQuery(con, query)
-  return(result)
+      SELECT groupe_gener 
+      FROM os_grpgener_artic 
+      WHERE libelle_court_groupe LIKE 'filgrastim%%'
+         OR libelle_court_groupe LIKE 'pegfilgrastim%%'
+         OR libelle_court_groupe LIKE 'epoetine%%'
+         OR libelle_court_groupe LIKE 'etanercept%%'
+         OR libelle_court_groupe LIKE 'adalimumab%%'
+         OR libelle_court_groupe LIKE 'enoxaparine%%') AND periode = %s
+  GROUP BY
+    CASE
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%FILGRASTIM%%'
+           AND concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) NOT LIKE '%%PEG%%'
+        THEN 'FILGRASTIM'
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%PEGFILGRASTIM%%'
+        THEN 'PEGFILGRASTIM'
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%EPOETINE%%'
+        THEN 'EPOETINE'
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%ETANERCEPT%%'
+        THEN 'ETANERCEPT'
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%ADALIMUMAB%%'
+        THEN 'ADALIMUMAB'
+      WHEN concat(rtrim(lib_dci),' ',rtrim(dosage_dci),' ',rtrim(forme_dci)) LIKE '%%ENOXAPARINE%%'
+        THEN 'ENOXAPARINE'
+      ELSE NULL
+    END,
+    CASE WHEN adhfour=401884 THEN 'SANDOZ' ELSE 'AUTRES' END
+),
+Pivoted AS (
+  SELECT
+    v.base_mol,
+    SUM(CASE WHEN v.labo='SANDOZ' THEN v.Qte  ELSE 0 END) AS QteSandoz,
+    SUM(CASE WHEN v.labo='SANDOZ' THEN v.PFHT ELSE 0 END)AS PFHTSandoz,
+    SUM(CASE WHEN v.labo='AUTRES' THEN v.Qte  ELSE 0 END) AS QteAutres,
+    SUM(CASE WHEN v.labo='AUTRES' THEN v.PFHT ELSE 0 END)AS PFHTAutres
+  FROM Ventes v
+  WHERE v.base_mol IS NOT NULL  -- on ignore tout ce qui n'est pas dans nos 6 molécules
+  GROUP BY v.base_mol),
+ResultsWithOrder AS (
+  SELECT
+    CASE b.base_mol
+      WHEN 'FILGRASTIM'    THEN 'FILGRASTIM (ZARZIO)'
+      WHEN 'PEGFILGRASTIM' THEN 'PEGFILGRASTIM (ZIEXTENZO)'
+      WHEN 'EPOETINE'      THEN 'EPOETINE (BINOCRIT)'
+      WHEN 'ETANERCEPT'    THEN 'ETANERCEPT (ERELZI)'
+      WHEN 'ADALIMUMAB'    THEN 'ADALIMUMAB (HYRIMOZ)'
+      WHEN 'ENOXAPARINE'   THEN 'ENOXAPARINE (ENOXAPARINE BECAT)'
+      ELSE 'INCONNU'
+    END AS [Molécules],
+    COALESCE(p.QteSandoz,   0) AS [Quantité Sandoz],
+    COALESCE(p.QteAutres,   0) AS [Quantité autres laboratoires],
+    COALESCE(p.PFHTSandoz,  0) AS [PFHT Sandoz],
+    COALESCE(p.PFHTAutres,  0) AS [PFHT autres laboratoires],
+    CAST(CASE WHEN COALESCE(p.PFHTSandoz,0) + COALESCE(p.PFHTAutres,0) = 0 THEN 0
+        ELSE ROUND(
+          100.0 * COALESCE(p.PFHTSandoz,0)/ (COALESCE(p.PFHTSandoz,0)+COALESCE(p.PFHTAutres,0)),2)END AS DECIMAL(10,2)) AS [PDM PFHT],
+    0 AS [Order],
+    CASE 
+      WHEN b.base_mol='FILGRASTIM'     THEN 1
+      WHEN b.base_mol='PEGFILGRASTIM'  THEN 2
+      WHEN b.base_mol='EPOETINE'       THEN 3
+      WHEN b.base_mol='ETANERCEPT'     THEN 4
+      WHEN b.base_mol='ADALIMUMAB'     THEN 5
+      WHEN b.base_mol='ENOXAPARINE'    THEN 6
+      ELSE 999 
+    END AS [SortOrder]
+  FROM BaseMols b
+  LEFT JOIN Pivoted p ON p.base_mol = b.base_mol
+  UNION ALL
+  SELECT
+    'TOTAL' AS [Molécules],
+    SUM(COALESCE(p.QteSandoz, 0)) AS [Quantité Sandoz],
+    SUM(COALESCE(p.QteAutres, 0)) AS [Quantité autres laboratoires],
+    SUM(COALESCE(p.PFHTSandoz, 0)) AS [PFHT Sandoz],
+    SUM(COALESCE(p.PFHTAutres, 0)) AS [PFHT autres laboratoires],
+    CAST(CASE WHEN SUM(COALESCE(p.PFHTSandoz,0)) + SUM(COALESCE(p.PFHTAutres,0)) = 0 THEN 0
+        ELSE ROUND(
+          100.0 * SUM(COALESCE(p.PFHTSandoz,0))/ (SUM(COALESCE(p.PFHTSandoz,0))+SUM(COALESCE(p.PFHTAutres,0))),2)END AS DECIMAL(10,2)) AS [PDM PFHT],
+    1 AS [Order],
+    999 AS [SortOrder]
+  FROM BaseMols b
+  LEFT JOIN Pivoted p ON p.base_mol = b.base_mol
+)
+SELECT 
+  [Molécules],
+  [Quantité Sandoz],
+  [Quantité autres laboratoires],
+  [PFHT Sandoz],
+  [PFHT autres laboratoires],
+  [PDM PFHT]
+FROM ResultsWithOrder
+ORDER BY [Order], [SortOrder]
+",
+  n_auto_adhpha_ecollect,
+  date_previous
+  )
+
+# 3) Exécution
+result <- DBI::dbGetQuery(con, query)
+return(result)
 }
 
 # Exécuter la fonction
-#res <- Bisomilaire(178, con)
-#print(res)
+#res_bio <- Biosimilaire(178, con)
+#print(res_bio)
+
+
 
  ############## TRONQUER DES TEXTE  ###########
 truncate_string <- function(txt, max_len = 50) {
