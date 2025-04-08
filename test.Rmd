@@ -4,7 +4,7 @@ output:
   html_document:
   theme:
     font_scale: 1
-    base_font: "Nunito Sans"
+    base_font: "'Nunito', sans-serif"
   pagedown::html_paged:
     self_contained: false
 params:
@@ -31,7 +31,7 @@ params:
   
 
 .html, body
-  background-color: #e6f5ff
+  background-color: #F2F5F7
   margin: 0  
   padding: 0
   //height: 29.7cm
@@ -42,16 +42,19 @@ params:
   font-size: calc(8px + 0.3vw)
 
 .rapport-header 
-  width: 100%
   display: flex
   flex-direction: column
-  background-color: #004a99
+  background-color: #254680
   padding: 20px 0
   margin: 0
-  font-family: "Nunito Sans"
+  font-family: 'Nunito', sans-serif
   position: relative
-  height: 100px
-
+  height: 80px
+  margin-bottom: 10px
+  bottom: 0
+  left: -20px
+  width: calc(100% + 40px)
+  padding-left: 20px
 
 .rapport-title 
   text-align: center
@@ -61,12 +64,12 @@ params:
 
 .pharma-info 
   position: absolute
-  bottom: 20px
+  bottom: 5px
   left: 10px
   display: flex
   align-items: center
   font-size: 14px
-  margin-top: 180px
+  margin-top: 0px
 
 
 .pharma-logo img 
@@ -78,13 +81,13 @@ params:
 
 .pharma-info span 
   color: #ffffff
-  font-family: "Nunito Sans"
+  font-family: "'Nunito', sans-serif"
   margin-right: 5px
   font-size: 12px
 
 .date-info 
   position: absolute
-  bottom: 20px
+  bottom: 5px
   right: 10px
   display: flex
   align-items: center
@@ -99,7 +102,7 @@ params:
   
 .date-info span 
   color: #ffffff
-  font-family: "Nunito Sans"
+  font-family: 'Nunito', sans-serif
   margin-right: 3px
   font-size: 12px
 
@@ -107,17 +110,17 @@ params:
   display: flex
   justify-content: flex-start
   align-items: baseline
-  background-color: #e6f5ff
-  gap: 162px
+  background-color: #F2F5F7
+  gap: 250px
   padding: 2px 0px
-  font-family: "Nunito Sans"
-
+  font-family: 'Nunito', sans-serif
+  margin-top: 30px
 
 .section-titles h2 
   font-size: 20px
   font-weight: bold
-  color: #004a99
-  font-family: "Nunito Sans"
+  color: #254680
+  font-family: 'Nunito', sans-serif
   margin: 0 0 10px 0
   position: relative
   margin-top: 0px
@@ -135,31 +138,48 @@ params:
   display: flex
   justify-content: space-around
   align-items: stretch
-  background-color: #e6f5ff
+  background-color: #F2F5F7
 
 
 .table 
   border-collapse: collapse
-  font-family: "Nunito Sans"
-  font-size: 11px
+  font-family: 'Nunito', sans-serif
+  font-size: 10px
   margin-top: 0px
 
 .table-top-10 
   width: 49%  
-  height: 30px
+  height: 2px
+  padding: 4px
   color: #ffffff
   border-bottom: none
+  font-size: 10px
+  padding: 2px 8px
   
 .table-top-10 td:nth-child(2),
 .table-top-10 td:nth-child(3) 
   text-align: right
+  
 .sandoz
   color: #f1b530!important
   
-.table-top-10 th, .table-top-5 th 
-  background-color: #004a99 !important
-  color: #ffffff !important
+.table-top-10 tr:nth-child(even) td 
+  background-color: #e0e0eb
 
+
+.table-top-10 tr:nth-child(odd) td 
+  background-color: #f3f5f7
+
+
+.table-top-10 th
+  padding: 4px
+  text-align: left
+  font-size: 13px
+  vertical-align: middle
+  font-weight: 500
+  height: 2px
+  font-family: 'Nunito', sans-serif
+  
 .table-top-5-container 
   display: flex
   flex-direction: column
@@ -172,55 +192,102 @@ params:
 .table-top-5 
   height: auto   
   margin: 0
-  padding: 10px
+  padding: 4px
   height: 170px
   margin-top: 0px
-  background-color: #004a99
+  background-color: #254680
   color: #ffffff
-
+  padding: 2px 8px
+  
 .table-top-5 td:nth-child(3),
 .table-top-5 td:nth-child(4) 
   text-align: right
+  padding-right: 15px !important
+  
+.table-top-5 tr:nth-child(even) td 
+  background-color: #e0e0eb
+
+
+.table-top-5 tr:nth-child(odd) td 
+  background-color: #f3f5f7
+  
+.table-top-5 th
+  padding: 4px
+  text-align: left
+  font-size: 13px
+  vertical-align: middle
+  font-weight: 500
+  height: 2px
+  font-family: 'Nunito', sans-serif
 
  
 .table th 
-  background-color: #004a99
+  background-color: #254680
   color: #ffffff
-  padding: 6px
+  padding: 1px 2px
   text-align: left
-  font-size: 14px
-
+  font-size: 13px
+  line-height: 1
+  vertical-align: middle
+  font-weight: 500
+  font-family: 'Nunito', sans-serif
+  
 .table td 
   background-color: #f3f5f7
-  height: 16px
-  text-align: left
-  border: 1px solid #ddd
-  font-size: 13px
-  padding: 6px 10px
-  line-height: 22px
-  height: 25px
+  border-bottom: 1px solid #ddd 
+  height: 12px
+  padding: 2px 8px
+  line-height: 18px
+  height: 20px
+  font-size: 12px
+  vertical-align: middle
+  border-radius: 2px
   
-.table tr:nth-child(even) td 
-  background-color: #f3f5f7
   
+.table thead tr th 
+  padding: 4px !important 
+  line-height: 1.2 !important
+  font-size: 13px !important
+  height: auto !important
+
+
+.table tr 
+  border-bottom: 1px solid #ddd
+
+.table-top-10 tr 
+  border-bottom: 1px solid #ddd
+
+.table-top-5 tr 
+  border-bottom: 1px solid #ddd
+  
+.table-top-10 td 
+  height: 24px !important
+  line-height: 24px !important
+  padding: 2px 8px !important
+  vertical-align: middle !important 
+
+.table-top-5 td 
+  height: 24px !important
+  line-height: 24px !important
+  padding: 2px 8px !important
+  vertical-align: middle !important
+
 .discussion-wrapper 
   display: flex
   align-items: flex-start
-  gap: 0px            
-
-
+  
 .bulle-discussion 
   display: flex
   justify-content: space-between 
   align-items: center
-  background-color: #fffacc      
+  background-color: #F0E2B8     
   padding: 6px 16px
   border-radius: 10px
   border: 2px solid #000000
   width: 135%
   height: 150px
-  font-family: "Nunito Sans"
-  margin-top: 47px
+  font-family: 'Nunito', sans-serif
+  margin-top: -40px
   
 .marge
   color:#ff9900
@@ -228,7 +295,7 @@ params:
   font-size: 15px
 
 .estimation
-  color:#004a99
+  color:#254680
   font-weight: bold
   font-size: 15px
   
@@ -248,7 +315,7 @@ params:
 .bulle-img img 
   width: 130px
   height: auto
-  margin-top: 120px 
+  margin-top: 33px 
 
 .bulle-discussion p 
   font-size: 16px
@@ -267,13 +334,13 @@ params:
 
 .section-lancements 
   padding-top: 5px
-  background-color: #e6f5ff
-  margin-top: 0px
- 
+  background-color: #F2F5F7
+  margin-top: 30px
+
 .section-lancements h2 
   font-size: 20px
   font-weight: bold
-  color: #004a99
+  color: #254680
   margin: 0 0 10px 0
   position: relative
   margin-top: 0px
@@ -288,29 +355,34 @@ params:
 
 .table-lancements 
   border-collapse: collapse
-  font-family: "Nunito Sans"
-  font-size: 13px
+  font-family: 'Nunito', sans-serif
+  font-size: 12px
   width: 99%
   margin: 0 auto
   margin-top: 0px
 
-
 .table-lancements th 
-  background-color: #004a99
+  background-color: #254680
   color: #ffffff
-  padding: 6px
+  padding: 4px
   text-align: left
-  font-size: 16px
+  font-size: 13px
+  vertical-align: middle
+  font-weight: 500
+  font-family: 'Nunito', sans-serif
 
 .table-lancements td 
   background-color: #f3f5f7
-  height: 16px
-  padding: 6px 10px
+  height: 12px
+  padding: 2px 8px
   text-align: left
   border: 1px solid #ddd
-  font-size: 13px
-  line-height: 22px
-  height: 25px
+  line-height: 18px
+  height: 20px
+  font-size: 12px
+  vertical-align: middle
+  border-radius: 2px
+
   
 .pdm-low 
   color: #ff0000!important
@@ -323,23 +395,52 @@ params:
 .table-lancements td:nth-child(4),
 .table-lancements td:nth-child(5) 
   text-align: right
-
   
-
 .table-lancements tr:nth-child(even) td 
-  background-color: #ffffff
+  background-color: #e0e0eb
+  
+.foote 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: #F2F5F7
+  padding: 4px 16px
+  font-family: "'Nunito', sans-serif"
+  font-size: 12px
+  margin: 0
+  border-top: 1px solid #254680
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  box-sizing: border-box
+
+.foote img 
+  height: 50px
+
+
+.foote .contact 
+  text-align: left
+  color: #254680
+  font-size: 12px
+
+.foote .partner 
+  text-align: center
+  font-style: italic
+  color: #254680
+  font-size: 12px
+  
 
 .section-biosimilaires 
   padding-top: 5px
   background-color: #ffffff
-  font-family: "Nunito Sans"
-  margin-top: 5px
-  //page-break-before: always
+  font-family: "'Nunito', sans-serif"
+  margin-top: 30px
 
 .section-biosimilaires h2 
   font-size: 20px
   font-weight: bold
-  color: #004a99
+  color: #254680
   margin: 0 0 10px 0
   position: relative
   margin-top: 0px
@@ -355,30 +456,38 @@ params:
 
 .table-biosimilaires 
   border-collapse: collapse
-  font-family: "Nunito Sans"
-  font-size: 13px
+  font-family: "'Nunito', sans-serif"
+  font-size: 12px
   width: 99%
   margin: 0 auto
   margin-top: 0px
-
+  
+.table-biosimilaires tr:not(.total-row) 
+    border-bottom: 1px solid #ddd
 
 .table-biosimilaires th 
-  background-color: #004a99
-  color: #e6f5ff
-  padding: 6px
+  background-color: #254680
+  color: #F2F5F7
+  padding: 4px
   text-align: left
   font-size: 14px
   font-weight: 500px
+  vertical-align: middle
+  font-weight: 500
+  font-family: 'Nunito', sans-serif
 
 .table-biosimilaires td 
   background-color: #f3f5f7
-  height: 16px
-  padding: 6px 10px
+  height: 12px
+  padding: 4px 8px     
   text-align: left
-  border: 1px solid #ddd
-  font-size: 13px
-  line-height: 22px
-  height: 25px
+  border: px solid #ddd
+  line-height: 18px
+  height: 20px          
+  font-size: 12px
+  margin-top: 50px
+  vertical-align: middle
+
   
 .table-biosimilaires td:nth-child(2),
 .table-biosimilaires td:nth-child(3),
@@ -387,113 +496,122 @@ params:
 .table-biosimilaires td:nth-child(6) 
   text-align: right
 
-
-.section-biosimilaires 
-  margin-bottom: 0
-  padding-bottom: 0
-  
 .total-row td 
-  background-color: #004a99 !important
+  background-color: #254680 !important
   color: #ffffff !important
   font-weight: bold
+  vertical-align: middle
 
 .bulle-dis 
   display: flex
   justify-content: space-between 
   align-items: center
-  background-color: #fffacc      
+  background-color: #F0E2B8     
   padding: 16px 16px
   border-radius: 10px
-  border: 2px solid #000000
+  border: 2px solid #254680
   width: 135%
   height: 180px
   font-size: 14px
-  font-family: "Nunito Sans"
-  margin-top: 50px
+  font-family: 'Nunito', sans-serif
+  margin-top: 60px
+  
+.bulle-im img 
+  width: 130px
+  height: auto
+  margin-top: 150px 
+  
 
 
 .table-biosimilaires tr:nth-child(even) td 
-  background-color: #f3f5f7
+  background-color: #e0e0eb
   
 .footer 
   display: flex
   justify-content: space-between
   align-items: center
-  background-color: #e6f5ff
-  padding: 8px 16px
-  font-family: "Nunito Sans"
-  font-size: 14px
+  background-color: #F2F5F7
+  padding: 4px 16px
+  font-family: 'Nunito', sans-serif
+  font-size: 12px
   margin: 0
-  margin-top: 250px     
-  border-top: 1px solid #004a99 
-  position:  static
+  border-top: 1px solid #254680
+  position: absolute
   bottom: 0
+  left: 0
   width: 100%
+  box-sizing: border-box
 
 .footer img 
-  height: 70px
+  height: 50px
 
 
 .footer .contact 
   text-align: left
-  color: #004a99
-  font-size: 15px
+  color: #254680
+  font-size: 12px
 
 .footer .partner 
   text-align: center
   font-style: italic
-  color: #004a99
-  font-size: 15px
+  color: #254680
+  font-size: 12px
   
-    
-  
+.footer 
+  position: fixed !important
+  bottom: 0 !important
+  left: 0 !important
+  width: 100% !important
+  -webkit-print-color-adjust: exact !important
+  print-color-adjust: exact !important
+
 @media print 
   .html, body
-    background-color: #e6f5ff !important
+    background-color: #F2F5F7 !important
     -webkit-print-color-adjust: exact
     print-color-adjust: exact
     
   .bulle-discussion 
-    background-color: #fffacc !important
+    background-color: #F0E2B8!important
 
   .rapport-header 
-    background-color: #004a99 !important
-    font-family: "Nunito Sans"!important
+    background-color: #254680 !important
+    font-family: 'Nunito', sans-serif !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .rapport-title 
     color: #ffffff !important
-    font-family: "Nunito Sans"!important
+    font-family: 'Nunito', sans-serif !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .pharma-info span 
     color: #ffffff !important
-    font-family: "Nunito Sans" !important
+    font-family: 'Nunito', sans-serif !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .date-info span 
     color: #ffffff !important
-    font-family: "Nunito Sans" !important
+    font-family: 'Nunito', sans-serif !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .section-titles  
-    background-color: #e6f5ff !important
-    font-family: "Nunito Sans"!important
+    background-color: #F2F5F7 !important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .section-titles h2 
-    color: #004a99 !important
-    font-family: "Nunito Sans"!important
+    color: #254680 !important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .section-titles h2::after 
     background-color: #f1b530 !important
-    font-family: "Nunito Sans"!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .table-container
-    background-color: #e6f5ff !important
-    font-family: "Nunito Sans"!important
+    background-color: #F2F5F7 !important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .sandoz
@@ -504,66 +622,113 @@ params:
     color: #ffffff!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
-
+  .table-top-10 tr:nth-child(even) td 
+    background-color: #ffffff !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .table-top-10 tr:nth-child(odd) td 
+    background-color: #f3f5f7 !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .table-top-10 td:nth-child(2),
+  .table-top-10 td:nth-child(3) 
+    text-align: right !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
   .table-top-10 th, .table-top-5 th 
-    background-color: #004a99 !important
+    background-color: #254680 !important
     color: #ffffff !important
+    font-weight: 500!important
+    font-family: 'Nunito', sans-serif !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important 
-  
   .table-top-5 
-  background-color: #004a99!important
+  background-color: #254680!important
   color: #ffffff!important
   -webkit-print-color-adjust: exact !important
   print-color-adjust: exact !important
-    
+  .table-top-5 tr:nth-child(even) td 
+    background-color: #f3f5f7!important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .table-top-5 tr:nth-child(odd) td 
+    background-color:#ffffff!important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .table-top-5 td:nth-child(3),
+  .table-top-5 td:nth-child(4) 
+    text-align: right !important
+    padding-right: 15px !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .table
+    border-bottom: 1px solid #ddd!important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
   .table th 
-    background-color: #004a99!important
+    background-color: #254680!important
     color: #ffffff!important
-    font-family: "Nunito Sans"!important
+    border: none!important
+    text-align: left!important
+    font-weight: 500!important
+    font-family: 'Nunito', sans-serif !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .table td 
     background-color: #ffffff !important
-    border: 1px solid #ddd!important
-    font-family: "Nunito Sans"!important
+    padding: 1px 8px !important
+    border-bottom: 1px solid #ddd !important
+    font-family: 'Nunito', sans-serif   !important
+    text-align: left !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
-  .table tr:nth-child(even) td
-    background-color: #f3f5f7!important
-    font-family: "Nunito Sans"!important
+    .table tr 
+    border-bottom: 1px solid #ddd !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+    .table tr:nth-child(even) td
+    background-color: #F2F5F7 !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .bulle-discussion
     background-color:  #fffacc!important
-    border: 2px solid #000000 !important
-    font-family: "Nunito Sans"!important
+    border: 2px solid #254680 !important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .section-lancements
-    background-color: #e6f5ff!important
+    background-color: #F2F5F7!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .section-lancements h2
-    color: #004a99!important
-    font-family: "Nunito Sans"!important
+    color: #254680!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .section-lancements h2::after 
     background-color: #f1b530!important
-    font-family: "Nunito Sans"!important
+    font-family: 'Nunito', sans-serif  !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .table-lancements tr 
+    border-bottom: 1px solid #ddd!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .table-lancements th  
-    background-color: #004a99!important
-    color: #e6f5ff!important
-    font-family: "Nunito Sans"!important
+    background-color: #254680!important
+    color: #F2F5F7!important
+    font-weight: bold !important
+    font-weight: 500!important
+    font-family: 'Nunito', sans-serif !important
+    border: none!important
+    text-align: left!important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .table-lancements td  
     background-color: #ffffff!important
-    border: 1px solid #ddd!important
-    font-family: "Nunito Sans"!important
+    border: 1px solid #ffffff!important
+    font-family: 'Nunito', sans-serif  !important
+    border: none !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .pdm-low 
@@ -576,67 +741,95 @@ params:
     print-color-adjust: exact !important
     
   .table-lancements tr:nth-child(even) td 
-    background-color: #f3f5f7!important
-    font-family: "Nunito Sans"!important
+    background-color: #F2F5F7!important
+    font-family: 'Nunito', sans-serif  !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .foote
+    background-color: #F2F5F7!important
+    font-family: 'Nunito', sans-serif  !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .foote .contact 
+    color: #254680!important
+    font-family: 'Nunito', sans-serif  !important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+  .foote .partner
+    color: #254680!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .section-biosimilaires 
-    background-color: #e6f5ff!important
-    font-family: "Nunito Sans"!important
+    background-color: #F2F5F7!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
+    
+    .table-biosimilaires tr 
+    border-bottom: 1px solid #F2F5F7!important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+    
   .section-biosimilaires h2 
-    color: #004a99!important
-    font-family: "Nunito Sans"!important
+    color: #254680!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .section-biosimilaires h2::after
     background-color: #f1b530!important
-    font-family: "Nunito Sans"!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .table-biosimilaires th 
-    background-color: #004a99!important
-    color: #e6f5ff!important
-    font-family: "Nunito Sans"!important
-    -webkit-print-color-adjust: exact !important
-    print-color-adjust: exact !important
+    background-color: #254680!important
+    color: white !important
+    border-left: none !important
+    border-right: none !important
+    border-top: none !important
+    border-bottom: none !important
+    font-weight: 500!important
+    font-family: 'Nunito', sans-serif !important
   .table-biosimilaires td 
     background-color: #ffffff!important
-    border: 1px solid #ddd!important
-    font-family: "Nunito Sans"!important
-    -webkit-print-color-adjust: exact !important
-    print-color-adjust: exact !important
+    border-left: none !important
+    border-right: none !important
+    border-top: none !important
+    border-bottom: none !important
+    font-family: 'Nunito', sans-serif   !important
+    height: 10px !important
+    line-height: 14px !important
+    padding: 4px 8px !important
   .total-row td 
-    background-color: #004a99 !important
+    background-color: #254680 !important
     color: #ffffff !important
     font-weight: bold !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .table-biosimilaires tr:nth-child(even) td 
-    background-color: #f3f5f7!important
-    font-family: "Nunito Sans"!important
+    background-color: #F2F5F7!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .bulle-dis
     background-color: #fffacc!important   
-    border: 2px solid #000000!important
-    font-family: "Nunito Sans"!important
+    border: 3px solid #254680!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .footer
-    background-color: #e6f5ff!important
-    font-family: "Nunito Sans"!important
+    background-color: #F2F5F7!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .footer .contact 
-    color: #004a99!important
-    font-family: "Nunito Sans"!important
+    color: #254680!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .footer .partner
-    color: #004a99!important
-    font-family: "Nunito Sans"!important
+    color: #254680!important
+    font-family: 'Nunito', sans-serif  !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .marge
@@ -644,7 +837,15 @@ params:
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
   .estimation
-    color:#004a99!important
+    color:#254680!important
+    -webkit-print-color-adjust: exact !important
+    print-color-adjust: exact !important
+    
+  .foote, .footer 
+    position: fixed !important
+    bottom: 0 !important
+    left: 0 !important
+    width: 100% !important
     -webkit-print-color-adjust: exact !important
     print-color-adjust: exact !important
    
@@ -661,7 +862,7 @@ a[href^="https"]::after
 <div class="pharma-info"><img src="https://isaac-1996.github.io/Localisation/pha.png" alt="Logo Pharmacie" /><span>`r params$pharmacie`</span><span></div><div class="date-info"><img src="https://isaac-1996.github.io/Localisation/Logo_calendrier.png" alt="Logo Calendrier" /><span>`r params$mois_annee`</span></div>
 </div>
 
-<div class="section-titles"><h2>Top 10 des switchs à réaliser </h2><h2>Top 5 princeps à substituer</h2></div>
+<div class="section-titles"><h2>Suivi des switchs </h2><h2>Princeps non substitués</h2></div>
 
 
 <div class="table-container"><table class="table table-top-10">
@@ -677,7 +878,7 @@ a[href^="https"]::after
       if (!is.null(params$top_10) && nrow(params$top_10) > 0) {
         for (i in 1:nrow(params$top_10)) {
           cat('<tr>') 
-          cat(paste0("<td>", truncate_string(params$top_10[i, "Présentation"], 70), "</td>"))
+          cat(paste0("<td>", capitalize_first(truncate_string(params$top_10[i, "Présentation"], 40)), "</td>"))
           cat(paste0('<td>', params$top_10[i, "Quantité"], '</td>'))      
           cat(paste0('<td>', params$top_10[i, "PFHT"], '€</td>'))
           cat('</tr>')  
@@ -704,10 +905,10 @@ a[href^="https"]::after
       if (!is.null(params$top_5) && nrow(params$top_5) > 0) {
         for (i in 1:nrow(params$top_5)) {
           cat('<tr>') 
-          cat(paste0("<td>", truncate_string(params$top_10[i, "Présentation"], 70), "</td>"))
-          cat(paste0('<td>', capitalize_first(as.character(params$top_5[i, "Laboratoire"])), '</td>'))
-          cat(paste0('<td>', params$top_5[i, "Quantité"], '</td>'))      
-          cat(paste0('<td>', params$top_5[i, "PFHT"], '€</td>'))
+          cat(paste0("<td>", capitalize_first(truncate_string(params$top_5[i, "Présentation"], 20)), "</td>"))
+          cat(paste0('<td>', capitalize_first(truncate_string(as.character(params$top_5[i, "Laboratoire"]), 17)), '</td>'))
+          cat(paste0('<td style="text-align: right !important;">', params$top_5[i, "Quantité"], '</td>'))      
+          cat(paste0('<td style="text-align: right !important;">', params$top_5[i, "PFHT"], '€</td>'))
           cat('</tr>')  
         }
       } else {
@@ -715,20 +916,18 @@ a[href^="https"]::after
       }
       ```
     </tbody>
-  </table>
-
-<div class="discussion-wrapper"><div class="bulle-discussion"><p>Vous auriez pu optimiser votre chiffre d’affaires vente sur le mois de `r params$mois_annee` avec une marge de<span class="marge"> `r params$marge`€</span> via :<br> <strong>Switchs :</strong> <strong class="estimation">`r params$switch_total`€</strong><br><strong>Princeps non substitués :</strong> <strong class="estimation">`r params$princeps_total`€</strong></p></div>
-<div class="bulle-img"><img src="https://isaac-1996.github.io/Localisation/a_revoir-removebg-preview.png" alt="Conseillère"/></div></div></div>
-</div>
+  </table></div></div>
+  
+<div class="discussion-wrapper"><div class="bulle-discussion"><p>Vous auriez pu optimiser votre chiffre d’affaires vente sur le mois de `r params$mois_annee` avec une marge de<span class="marge"> `r params$marge`€</span> via :<br> <strong>Switchs :</strong> <strong class="estimation">`r params$switch_total`€</strong><br><strong>Princeps non substitués :</strong> <strong class="estimation">`r params$princeps_total`€</strong></p></div><div class="bulle-img"><img src="https://isaac-1996.github.io/RVA/im1.png" alt="Conseillère"/></div></div></div>
 
 <div class="section-lancements"><h2>Lancements sur les 6 derniers mois</h2><table class="table-lancements">
     <thead>
       <tr>
         <th>Lancements</th>
-        <th>PDM Gx <span class = "sandoz">Sandoz</span></th>
-        <th>Quantité <span class = "sandoz">Sandoz</span></th>
-        <th>Autres<br>génériqueurs</th>
-        <th>Princeps</th>
+        <th>PDM Gx Sandoz</th>
+        <th>Quantité Sandoz</th>
+        <th>Quantité autres</th>
+        <th>Quantité princeps</th>
     </tr>
   </thead>
   <tbody>
@@ -754,9 +953,10 @@ a[href^="https"]::after
       ```  
     </tbody>
   </table>
-</div>
+</div><div class="foote"><div class="contact"><a href="https://www.ospharm.com/" target="_blank" style="text-decoration: none;"><img src="https://isaac-1996.github.io/Localisation/03_LOGO_OSPHARM.png" alt="Ospharm"/></a><p>02 40 53 63 44 | sandoz.ospharm.org</p></div><div class="partner">En partenariat avec</div><div><img src="https://isaac-1996.github.io/Localisation/Sandoz%20Logo%20Black%20and%20White%20300dpi.bmp__.png" alt="Sandoz"></div></div>
 
 <div style="page-break-before: always;"></div>
+
 <div class="html"><div class="rapport-header">
   <h1 class="rapport-title">Rapport mensuel Sandoz</h1>
 <div class="pharma-info"><img src="https://isaac-1996.github.io/Localisation/pha.png" alt="Logo Pharmacie" /><span>`r params$pharmacie`</span><span></div><div class="date-info"><img src="https://isaac-1996.github.io/Localisation/Logo_calendrier.png" alt="Logo Calendrier" /><span>`r params$mois_annee`</span></div>
@@ -766,11 +966,11 @@ a[href^="https"]::after
     <thead>
       <tr>
         <th>Molécules</th>
-        <th>Quantité<br><span class = "sandoz">Sandoz</span></th>
-        <th>Quantité<br>autres<br>laboratoires</th>
-        <th>PFHT<br><span class = "sandoz">Sandoz</span></th>
-        <th>PFHT autres<br>laboratoires</th>
-        <th>PDM PFHT <span class = "sandoz"><br>Sandoz</span></th>
+        <th>Quantité Sandoz</th>
+        <th>Quantité autres</th>
+        <th>PFHT Sandoz</th>
+        <th>PFHT autres</th>
+        <th>PDM PFHT Sandoz</th>
       </tr>
     </thead>
   <tbody>
@@ -803,7 +1003,7 @@ a[href^="https"]::after
   </table>
 </div>
 <div class="discussion-wrapper">
-  <div class="bulle-img"><img src="https://isaac-1996.github.io/Localisation/pharmac.png" alt="Conseillère"/></div>
+  <div class="bulle-im"><img src="https://isaac-1996.github.io/RVA/im2.png" alt="Conseillère"/></div>
   <div class="bulle-dis"><p>Sur la période <strong class="estimation">`r params$mois_annee`</strong>, voici les estimations de chiffres d'affaires à réaliser afin d'atteindre les objectifs de parts de marché (PDM PFHT) suivants :<br><br>
       ```{r display_objectives, echo=FALSE, results='asis'}
   if (!is.null(params$gap_total)) {
@@ -828,9 +1028,5 @@ a[href^="https"]::after
   
 </p></div>
 </div>
-<br>
-<br>
-<br>
-<br>
 <div class="footer"><div class="contact"><a href="https://www.ospharm.com/" target="_blank" style="text-decoration: none;"><img src="https://isaac-1996.github.io/Localisation/03_LOGO_OSPHARM.png" alt="Ospharm"/></a><p>02 40 53 63 44 | sandoz.ospharm.org</p></div><div class="partner">En partenariat avec</div><div><img src="https://isaac-1996.github.io/Localisation/Sandoz%20Logo%20Black%20and%20White%20300dpi.bmp__.png" alt="Sandoz"></div></div>
 </div>
