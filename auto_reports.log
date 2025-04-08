@@ -1,0 +1,1960 @@
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Error in mois_precedent("sql") : could not find function "mois_precedent"
+Execution halted
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Error in mois_precedent("sql") : could not find function "mois_precedent"
+Execution halted
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Error in mois_precedent("sql") : could not find function "mois_precedent"
+Execution halted
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Error in mois_precedent("sql") : could not find function "mois_precedent"
+Execution halted
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr   1.1.4     ✔ stringr 1.5.1
+✔ forcats 1.0.0     ✔ tibble  3.2.1
+✔ purrr   1.0.2     ✔ tidyr   1.3.0
+✔ readr   2.1.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+                       Lancements PDM Gx Sandoz Sandoz Autres génériqueurs
+1  VILDAGLIPTINE + METFORMINE CH.         15.38      2                  11
+2  VILDAGLIPTINE                           9.67      3                  28
+3  TERIFLUNOMIDE                           0.00      0                   1
+4  SILODOSINE                              0.00      0                 127
+5  PIRFENIDONE                             0.00      0                   0
+6  ACETATE ABIRATERONE                     0.00      0                   0
+7  RIVAROXABAN                             0.00      0                   0
+8  SITAGLIPTINE + METFORMINE CH.           0.00      0                  73
+9  TRAMADOL CHLORHYDRATE                   0.00      0                  48
+10 DUTASTERIDE + TAMSULOSINE CH.           0.00      0                   1
+   Princeps
+1        10
+2         0
+3        12
+4         0
+5         0
+6         0
+7       131
+8        24
+9         0
+10        2
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 10746 | Email = biama@ospharea.com 
+ERREUR pour ID = 10746 : pandoc version 1.12.3 or higher is required and was not found (see the help page ?rmarkdown::pandoc_available). 
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr   1.1.4     ✔ stringr 1.5.1
+✔ forcats 1.0.0     ✔ tibble  3.2.1
+✔ purrr   1.0.2     ✔ tidyr   1.3.0
+✔ readr   2.1.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+                       Lancements PDM Gx Sandoz Sandoz Autres génériqueurs
+1  VILDAGLIPTINE + METFORMINE CH.         15.38      2                  11
+2  VILDAGLIPTINE                           9.67      3                  28
+3  TRAMADOL CHLORHYDRATE                   0.00      0                  48
+4  RIVAROXABAN                             0.00      0                   0
+5  FLUTICASONE PROP. + SALMETEROL          0.00      0                   4
+6  ACETATE ABIRATERONE                     0.00      0                   0
+7  SILODOSINE                              0.00      0                 127
+8  SITAGLIPTINE + METFORMINE CH.           0.00      0                  73
+9  TERIFLUNOMIDE                           0.00      0                   1
+10 DUTASTERIDE + TAMSULOSINE CH.           0.00      0                   1
+   Princeps
+1        10
+2         0
+3         0
+4       131
+5        17
+6         0
+7         0
+8        24
+9        12
+10        2
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 10746 | Email = biama@ospharea.com 
+ERREUR pour ID = 10746 : pandoc version 1.12.3 or higher is required and was not found (see the help page ?rmarkdown::pandoc_available). 
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Error in Sys.getenv(RSTUDIO_PANDOC = "C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools") : 
+  unused argument (RSTUDIO_PANDOC = "C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools")
+Execution halted
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr   1.1.4     ✔ stringr 1.5.1
+✔ forcats 1.0.0     ✔ tibble  3.2.1
+✔ purrr   1.0.2     ✔ tidyr   1.3.0
+✔ readr   2.1.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+                       Lancements PDM Gx Sandoz Sandoz Autres génériqueurs
+1  VILDAGLIPTINE + METFORMINE CH.         15.38      2                  11
+2  VILDAGLIPTINE                           9.67      3                  28
+3  SUNITINIB                               0.00      0                   0
+4  SITAGLIPTINE                            0.00      0                 116
+5  SITAGLIPTINE + METFORMINE CH.           0.00      0                  73
+6  DEFERASIROX                             0.00      0                   0
+7  ACETATE ABIRATERONE                     0.00      0                   0
+8  DUTASTERIDE + TAMSULOSINE CH.           0.00      0                   1
+9  EVEROLIMUS                              0.00      0                   0
+10 TERIFLUNOMIDE                           0.00      0                   1
+   Princeps
+1        10
+2         0
+3         0
+4        14
+5        24
+6         0
+7         0
+8         2
+9         0
+10       12
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 10746 | Email = biama@ospharea.com 
+ERREUR pour ID = 10746 : pandoc version 1.12.3 or higher is required and was not found (see the help page ?rmarkdown::pandoc_available). 
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr   1.1.4     ✔ stringr 1.5.1
+✔ forcats 1.0.0     ✔ tibble  3.2.1
+✔ purrr   1.0.2     ✔ tidyr   1.3.0
+✔ readr   2.1.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 10746 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandocf08c79c11f45.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpMltiN8\rmarkdown-strf08c77dd39e3.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_10746_Janvier 2025.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr   1.1.4     ✔ stringr 1.5.1
+✔ forcats 1.0.0     ✔ tibble  3.2.1
+✔ purrr   1.0.2     ✔ tidyr   1.3.0
+✔ readr   2.1.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 10746 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc742cd554629.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpiUqiUp\rmarkdown-str742c752d1ce7.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_10746_Janvier 2025.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr   1.1.4     ✔ stringr 1.5.1
+✔ forcats 1.0.0     ✔ tibble  3.2.1
+✔ purrr   1.0.2     ✔ tidyr   1.3.0
+✔ readr   2.1.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 10746 | Email = biama@ospharea.com 
+ERREUR pour ID = 10746 : pandoc version 1.12.3 or higher is required and was not found (see the help page ?rmarkdown::pandoc_available). 
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr   1.1.4     ✔ stringr 1.5.1
+✔ forcats 1.0.0     ✔ tibble  3.2.1
+✔ purrr   1.0.2     ✔ tidyr   1.3.0
+✔ readr   2.1.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-18
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 10746 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandocf8f8a2e111d.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpKy37yG\rmarkdown-strf8f81b51104.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_10746_Janvier 2025.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-19
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 10746 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc34582506a86.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpyUFyoU\rmarkdown-str345830cd239b.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_10746_Janvier 2025.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-20
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 6908 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc14b5826a71a67.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpyU3Ois\rmarkdown-str14b5861175bf2.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6908_Janvier 2025.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-20
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 10
+Traitement en cours pour ID = 6908 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc10e1c476e63e4.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpUXOcQJ\rmarkdown-str10e1c543383a.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6908_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 13850 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc10e1c3e994042.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpUXOcQJ\rmarkdown-str10e1c58485dbe.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_13850_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 6203 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc10e1c743a394c.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpUXOcQJ\rmarkdown-str10e1c3e73835.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6203_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 12222 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc10e1c199f2f1b.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpUXOcQJ\rmarkdown-str10e1c3f343331.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_12222_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 13789 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc10e1c1e544707.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpUXOcQJ\rmarkdown-str10e1c4e955581.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_13789_Janvier 2025.html
+[2025-02-20 11:30:40] [error] handle_read_frame error: asio.system:10054 (Une connexion existante a dû être fermée par l’hôte distant.)
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 5135 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc10e1c287baa.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpUXOcQJ\rmarkdown-str10e1c22af2137.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_5135_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 3112 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc10e1c1b262cdd.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpUXOcQJ\rmarkdown-str10e1c286623a4.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_3112_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 14136 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc10e1c799c2fb8.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpUXOcQJ\rmarkdown-str10e1c18e055a.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_14136_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 12116 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc10e1c24165e96.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpUXOcQJ\rmarkdown-str10e1c49821a28.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_12116_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 9563 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc10e1c7163290d.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpUXOcQJ\rmarkdown-str10e1c7bf07121.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_9563_Janvier 2025.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-20
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202501
+Pharmacies à traiter : 10
+Traitement en cours pour ID = 6908 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1504c5cf5da4.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpuEttor\rmarkdown-str1504c73a84aba.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6908_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 13850 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1504c4c707dc7.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpuEttor\rmarkdown-str1504c47d74ad9.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_13850_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 6203 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1504c56a84d34.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpuEttor\rmarkdown-str1504c7acc3c36.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6203_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 12222 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1504c9641124.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpuEttor\rmarkdown-str1504c334c7e81.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_12222_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 13789 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1504c4fd17c11.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpuEttor\rmarkdown-str1504c7c5c44ac.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_13789_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 5135 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1504c6b5d3db3.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpuEttor\rmarkdown-str1504c154124e8.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_5135_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 3112 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1504c43b41303.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpuEttor\rmarkdown-str1504c418128a5.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_3112_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 14136 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1504c36c4563a.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpuEttor\rmarkdown-str1504c18df5c94.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_14136_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 12116 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1504c68b8ed1.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpuEttor\rmarkdown-str1504c576260a8.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_12116_Janvier 2025.html
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 9563 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1504c13ff182.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpuEttor\rmarkdown-str1504c2d4e780f.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_9563_Janvier 2025.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-20
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202411
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 6908 | Email = amabileisaac@gmail.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc15f647dd24dc.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpCWkueH\rmarkdown-str15f647a7d55b3.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6908_Novembre 2024.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-20
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202411
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 6908 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1620c12b971f8.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\Rtmp0S2vOM\rmarkdown-str1620c8b8309c.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6908_Novembre 2024.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-20
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202402
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 6908 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc15e20e53730a.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpwNqHSF\rmarkdown-str15e204add1cee.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6908_Février 2024.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-20
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202306
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 6908 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc167544283608b.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpIJEE7A\rmarkdown-str167545dd72d63.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6908_Juin 2023.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-20
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 202012
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 6203 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc158283ffa15c6.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpkjOkiN\rmarkdown-str1582820b32bc6.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6203_Décembre 2020.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+Le jour d'envoi mensuel calculé est : 2025-02-20
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+Période calculée (SQL) : 200806
+Pharmacies à traiter : 1
+Traitement en cours pour ID = 6908 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/11                  
+2/11 [sass_setup]     
+Converting with the R package sass
+3/11                  
+4/11 [table_top10]    
+5/11                  
+6/11 [table_top5]     
+7/11                  
+8/11 [table_lancement]
+9/11                  
+10/11 [biosimilaire]   
+11/11                  
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1583c4385e80.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpGg8p9r\rmarkdown-str1583c2671431c.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_6908_Juin 2008.html
+OK - Rapport généré et envoyé.
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[1] "LC_COLLATE=fr_FR.UTF-8;LC_CTYPE=fr_FR.UTF-8;LC_MONETARY=fr_FR.UTF-8;LC_NUMERIC=C;LC_TIME=fr_FR.UTF-8"
+[OSPHARM] Section | Import des fonctions externes
+Loading required package: ggplot2
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()  masks plotly::filter(), stats::filter()
+✖ purrr::flatten() masks jsonlite::flatten()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'httr'
+
+The following object is masked from 'package:plotly':
+
+    config
+
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+There were 17 warnings (use warnings() to see them)
+[OSPHARM] Section | Scheduling
+Le jour d'envoi mensuel calculé est : 2025-03-20
+[OSPHARM] Section | Debut du programme
+==> Nous sommes le bon jour d'envoi ! Début du traitement...
+[OSPHARM] Section | Extraction des données
+Période calculée (SQL) : 202502
+Pharmacies à traiter : 3
+[OSPHARM] Section | Automatisation Pagedown
+Traitement en cours pour ID = 10746 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/13                     
+2/13 [sass_setup]        
+Converting with the R package sass
+3/13                     
+4/13 [table_top10]       
+5/13                     
+6/13 [table_top5]        
+7/13                     
+8/13 [table_lancement]   
+9/13                     
+10/13 [biosimilaire]      
+11/13                     
+12/13 [display_objectives]
+13/13                     
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc651466a74c0a.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpAjtOGC\rmarkdown-str65143c6251c7.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_10746_Février 2025.html
+[OSPHARM] Section | emailing
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 11445 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/13                     
+2/13 [sass_setup]        
+Converting with the R package sass
+3/13                     
+4/13 [table_top10]       
+5/13                     
+6/13 [table_top5]        
+7/13                     
+8/13 [table_lancement]   
+9/13                     
+10/13 [biosimilaire]      
+11/13                     
+12/13 [display_objectives]
+13/13                     
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc651410e2713a.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpAjtOGC\rmarkdown-str65142320fbb.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_11445_Février 2025.html
+[OSPHARM] Section | emailing
+OK - Rapport généré et envoyé.
+Traitement en cours pour ID = 11606 | Email = biama@ospharea.com 
+
+
+processing file: test.Rmd
+1/13                     
+2/13 [sass_setup]        
+Converting with the R package sass
+3/13                     
+4/13 [table_top10]       
+5/13                     
+6/13 [table_top5]        
+7/13                     
+8/13 [table_lancement]   
+9/13                     
+10/13 [biosimilaire]      
+11/13                     
+12/13 [display_objectives]
+13/13                     
+output file: test.knit.md
+
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS test.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc651445fb72cc.html --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmarkdown\lua\latex-div.lua" --embed-resources --standalone --variable bs3=TRUE --section-divs --template "C:\Users\erwan\AppData\Local\R\win-library\4.3\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable theme=bootstrap --mathjax --variable "mathjax-url=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" --include-in-header "C:\Users\erwan\AppData\Local\Temp\RtmpAjtOGC\rmarkdown-str6514fc87d7.html" 
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'test.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: Rapport_11606_Février 2025.html
+[OSPHARM] Section | emailing
+OK - Rapport généré et envoyé.
+[OSPHARM] Section | bilan stats
+==> Traitement terminé, bilan envoyé à l'administrateur.
+[OSPHARM] Section | Cleanup
