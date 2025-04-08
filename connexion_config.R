@@ -485,7 +485,7 @@ return(result)
  ############## TRONQUER DES TEXTE  ###########
 truncate_string <- function(txt, max_len = 50) {
   if (nchar(txt) > max_len) {
-    paste0(substr(txt, 1, max_len), "...")
+    paste0(substr(txt, 1, max_len), " ")
   } else {
     txt
   }
